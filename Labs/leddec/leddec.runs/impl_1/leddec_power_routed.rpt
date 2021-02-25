@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date             : Tue Feb 23 14:46:10 2021
+| Date             : Wed Feb 24 18:00:34 2021
 | Host             : kolibri running 64-bit major release  (build 9200)
 | Command          : report_power -file leddec_power_routed.rpt -pb leddec_power_summary_routed.pb -rpx leddec_power_routed.rpx
 | Design           : leddec
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 10.702       |
+| Total On-Chip Power (W)  | 10.400       |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 10.497       |
-| Device Static (W)        | 0.205        |
+| Dynamic (W)              | 10.201       |
+| Device Static (W)        | 0.198        |
 | Effective TJA (C/W)      | 4.6          |
-| Max Ambient (C)          | 36.2         |
-| Junction Temperature (C) | 73.8         |
+| Max Ambient (C)          | 37.5         |
+| Junction Temperature (C) | 72.5         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,12 +52,12 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     0.031 |       11 |       --- |             --- |
-|   LUT as Logic |     0.031 |        6 |     63400 |           <0.01 |
-| Signals        |     0.118 |       17 |       --- |             --- |
-| I/O            |    10.348 |       17 |       210 |            8.10 |
-| Static Power   |     0.205 |          |           |                 |
-| Total          |    10.703 |          |           |                 |
+| Slice Logic    |     0.032 |       11 |       --- |             --- |
+|   LUT as Logic |     0.032 |        6 |     63400 |           <0.01 |
+| Signals        |     0.113 |       17 |       --- |             --- |
+| I/O            |    10.056 |       17 |       210 |            8.10 |
+| Static Power   |     0.198 |          |           |                 |
+| Total          |    10.400 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -67,9 +67,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.274 |       0.173 |      0.101 |       NA    | Unspecified | NA         |
-| Vccaux    |       1.800 |     0.407 |       0.378 |      0.029 |       NA    | Unspecified | NA         |
-| Vcco33    |       3.300 |     2.926 |       2.922 |      0.004 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.265 |       0.169 |      0.096 |       NA    | Unspecified | NA         |
+| Vccaux    |       1.800 |     0.396 |       0.368 |      0.028 |       NA    | Unspecified | NA         |
+| Vcco33    |       3.300 |     2.844 |       2.840 |      0.004 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -134,7 +134,7 @@ Table of Contents
 +--------+-----------+
 | Name   | Power (W) |
 +--------+-----------+
-| leddec |    10.497 |
+| leddec |    10.201 |
 +--------+-----------+
 
 
