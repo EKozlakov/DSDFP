@@ -1,0 +1,3 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/CPE487A-DSD/Labs/hexcalc/hexcalc.sim/sim_1/impl/func/xsim/hexcalc_func_impl.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'keypad'
+INFO: [VRFC 10-3107] analyzing entity 'hexcalc'

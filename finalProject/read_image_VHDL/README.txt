@@ -1,0 +1,2 @@
+IMPORTANT NOTICE:
+For the "IMAGE_FILE_NAME : string :=" variable, insert the FULL FILEPATH to the image file you want to read. In my case, I left it as "D:/.../testimg.mif." I would recommend doing this for your simulation so Vivado doesn't throw a fit and tell you it can't find the file.

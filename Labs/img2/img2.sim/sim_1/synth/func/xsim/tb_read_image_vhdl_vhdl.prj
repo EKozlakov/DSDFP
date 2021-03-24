@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"tb_read_image_vhdl_func_synth.vhd" \
+"../../../../../../read_image_VHDL/read_image_VHDL.srcs/sim_1/new/tb_read_image_vhdl.vhd" \
+
+# Do not sort compile order
+nosort

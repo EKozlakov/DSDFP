@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Sun Mar 21 16:23:38 2021
+| Date         : Sun Mar 21 18:50:52 2021
 | Host         : kolibri running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file hexcalc_control_sets_placed.rpt
 | Design       : hexcalc
@@ -58,11 +58,11 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              26 |            8 |
-| No           | No                    | Yes                    |               3 |            3 |
+| No           | No                    | No                     |              26 |            9 |
+| No           | No                    | Yes                    |               3 |            2 |
 | No           | Yes                   | No                     |               0 |            0 |
 | Yes          | No                    | No                     |              16 |            5 |
-| Yes          | No                    | Yes                    |              32 |           11 |
+| Yes          | No                    | Yes                    |              32 |           18 |
 | Yes          | Yes                   | No                     |               0 |            0 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
@@ -70,19 +70,19 @@ Table of Contents
 4. Detailed Control Set Information
 -----------------------------------
 
-+----------------------+--------------------------+------------------+------------------+----------------+--------------+
-|     Clock Signal     |       Enable Signal      | Set/Reset Signal | Slice Load Count | Bel Load Count | Bels / Slice |
-+----------------------+--------------------------+------------------+------------------+----------------+--------------+
-|  kp1/pr_state_reg[2] |                          |                  |                1 |              1 |         1.00 |
-|  sm_clk_BUFG         |                          | bt_clr_IBUF      |                3 |              3 |         1.00 |
-|  samp_ck             |                          |                  |                1 |              4 |         4.00 |
-|  samp_ck             | kp1/CV4                  |                  |                2 |              4 |         2.00 |
-|  samp_ck             | kp1/CV1                  |                  |                1 |              4 |         4.00 |
-|  samp_ck             | kp1/CV3                  |                  |                1 |              4 |         4.00 |
-|  samp_ck             | kp1/CV2                  |                  |                1 |              4 |         4.00 |
-|  sm_clk_BUFG         | kp1/E[0]                 | bt_clr_IBUF      |                6 |             16 |         2.67 |
-|  sm_clk_BUFG         | kp1/pr_state_reg[2]_1[0] | bt_clr_IBUF      |                5 |             16 |         3.20 |
-|  clk_50MHz_IBUF_BUFG |                          |                  |                6 |             21 |         3.50 |
-+----------------------+--------------------------+------------------+------------------+----------------+--------------+
++----------------------+------------------------+------------------+------------------+----------------+--------------+
+|     Clock Signal     |      Enable Signal     | Set/Reset Signal | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------------+------------------------+------------------+------------------+----------------+--------------+
+|  kp1/pr_state_reg[0] |                        |                  |                1 |              1 |         1.00 |
+|  sm_clk_BUFG         |                        | bt_clr_IBUF      |                2 |              3 |         1.50 |
+|  samp_ck             |                        |                  |                2 |              4 |         2.00 |
+|  samp_ck             | kp1/CV2                |                  |                1 |              4 |         4.00 |
+|  samp_ck             | kp1/CV3                |                  |                1 |              4 |         4.00 |
+|  samp_ck             | kp1/CV4                |                  |                1 |              4 |         4.00 |
+|  samp_ck             | kp1/CV1                |                  |                2 |              4 |         2.00 |
+|  sm_clk_BUFG         | kp1/E[0]               | bt_clr_IBUF      |                7 |             16 |         2.29 |
+|  sm_clk_BUFG         | kp1/pr_state_reg[2][0] | bt_clr_IBUF      |               11 |             16 |         1.45 |
+|  clk_50MHz_IBUF_BUFG |                        |                  |                6 |             21 |         3.50 |
++----------------------+------------------------+------------------+------------------+----------------+--------------+
 
 

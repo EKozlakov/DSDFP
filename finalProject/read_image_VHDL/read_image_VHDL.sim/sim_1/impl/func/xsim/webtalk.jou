@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Mar 23 17:10:41 2021
+# Process ID: 6164
+# Current directory: D:/CPE487A-DSD/Labs/read_image_VHDL/read_image_VHDL.sim/sim_1/impl/func/xsim
+# Command line: wbtcv.exe -mode batch -source D:/CPE487A-DSD/Labs/read_image_VHDL/read_image_VHDL.sim/sim_1/impl/func/xsim/xsim.dir/tb_read_image_vhdl_func_impl/webtalk/xsim_webtalk.tcl -notrace
+# Log file: D:/CPE487A-DSD/Labs/read_image_VHDL/read_image_VHDL.sim/sim_1/impl/func/xsim/webtalk.log
+# Journal file: D:/CPE487A-DSD/Labs/read_image_VHDL/read_image_VHDL.sim/sim_1/impl/func/xsim\webtalk.jou
+#-----------------------------------------------------------
+source D:/CPE487A-DSD/Labs/read_image_VHDL/read_image_VHDL.sim/sim_1/impl/func/xsim/xsim.dir/tb_read_image_vhdl_func_impl/webtalk/xsim_webtalk.tcl -notrace

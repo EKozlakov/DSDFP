@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/CPE487A-DSD/Labs/read_image_VHDL/read_image_VHDL.sim/sim_1/impl/func/xsim/tb_read_image_vhdl_func_impl.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'read_image_VHDL'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/CPE487A-DSD/Labs/read_image_VHDL/read_image_VHDL.srcs/sim_1/new/tb_read_image_vhdl.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_read_image_vhdl'

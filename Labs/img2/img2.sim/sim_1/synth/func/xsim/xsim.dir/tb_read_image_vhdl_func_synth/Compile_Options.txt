@@ -1,0 +1,1 @@
+-wto "047dbdf59dec4363ab42952670130788" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "tb_read_image_vhdl_func_synth" "xil_defaultlib.tb_read_image_vhdl" -log "elaborate.log" 
