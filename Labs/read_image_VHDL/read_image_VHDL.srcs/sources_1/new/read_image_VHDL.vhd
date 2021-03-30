@@ -19,7 +19,9 @@ entity read_image_VHDL is
     wraddress: IN STD_logic_vector((ADDR_WIDTH-1) downto 0);
     we: IN STD_LOGIC;
     re: IN STD_LOGIC;
-    q: OUT std_logic_vector ((DATA_WIDTH-1) DOWNTO 0));
+    q: OUT std_logic_vector ((DATA_WIDTH-1) DOWNTO 0);
+    seg: OUT std_logic_vector (6 DOWNTO 0);
+    anode: OUT std_logic_vector (7 DOWNTO 0));
 end read_image_VHDL;
 
 architecture behavioral of read_image_VHDL is
@@ -43,6 +45,18 @@ end function;
 signal ram_block: mem_type := init_mem(IMAGE_FILE_NAME);
 signal read_address_reg: std_logic_vector((ADDR_WIDTH-1) downto 0) := (others=>'0');
   
+
+COMPONENT leddec IS
+    PORT (
+        dig : IN STD_LOGIC_VECTOR (2 DOWNTO 0);
+        data2 : IN STD_LOGIC_VECTOR (3 DOWNTO 0); --data for display
+        anode : OUT STD_LOGIC_VECTOR (7 DOWNTO 0);
+        seg : OUT STD_LOGIC_VECTOR (6 DOWNTO 0)
+    );
+END COMPONENT;
+
+signal S : STD_LOGIC_VECTOR (3 DOWNTO 0); --change to fit actual data
+ 
 begin
   process (clock)
   begin
@@ -55,5 +69,8 @@ begin
       end if;
     end if;
   end process;
+
+L1 : leddec
+PORT MAP(dig => "000", data2 => S, anode => anode, seg => seg);
 
 end behavioral;

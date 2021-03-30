@@ -85,7 +85,10 @@ set_property ip_output_repo d:/CPE487A-DSD/Labs/read_image_VHDL/read_image_VHDL.
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_vhdl -library xil_defaultlib D:/CPE487A-DSD/Labs/read_image_VHDL/read_image_VHDL.srcs/sources_1/new/read_image_VHDL.vhd
+read_vhdl -library xil_defaultlib {
+  D:/CPE487A-DSD/Labs/read_image_VHDL/read_image_VHDL.srcs/sources_1/new/leddec.vhd
+  D:/CPE487A-DSD/Labs/read_image_VHDL/read_image_VHDL.srcs/sources_1/new/read_image_VHDL.vhd
+}
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -95,6 +98,9 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
+read_xdc D:/CPE487A-DSD/Labs/read_image_VHDL/read_image_VHDL.srcs/constrs_1/new/leddec.xdc
+set_property used_in_implementation false [get_files D:/CPE487A-DSD/Labs/read_image_VHDL/read_image_VHDL.srcs/constrs_1/new/leddec.xdc]
+
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
 
