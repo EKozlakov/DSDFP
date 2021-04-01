@@ -19,9 +19,10 @@
     - we
    
    Screenshot of Xilinx Vivado with error messages:
+   
   ![alt text](https://github.com/EKozlakov/CPE487A-DSD/blob/master/finalProject/read_image_VHDL/pinPlanningErrors2.jpg)
   
-  ![alt text](https://github.com/EKozlakov/CPE487A-DSD/blob/master/finalProject/read_image_VHDL/pinPlanningErrors1.jpg).
+  ![alt text](https://github.com/EKozlakov/CPE487A-DSD/blob/master/finalProject/read_image_VHDL/pinPlanningErrors1.jpg)
   
   **Note:** _The read\_image\_VHDL.vhd file currently contains several sub files consisting of constaint files 'leddec.xdc' (named mistakenly because it contains 'hexcount.xdc' code), 'counter.vhd,' and 'leddec.vhd.'_
   
