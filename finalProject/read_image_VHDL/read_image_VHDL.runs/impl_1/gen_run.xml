@@ -16,9 +16,12 @@
   <File Type="BITSTR-BMM" Name="read_image_VHDL_bd.bmm"/>
   <File Type="ROUTE-METHODOLOGY-DRC" Name="read_image_VHDL_methodology_drc_routed.rpt"/>
   <File Type="BITSTR-MMI" Name="read_image_VHDL.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="read_image_VHDL_methodology_drc_routed.pb"/>
   <File Type="BITSTR-SYSDEF" Name="read_image_VHDL.sysdef"/>
+  <File Type="ROUTE-DRC-RPX" Name="read_image_VHDL_drc_routed.rpx"/>
   <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
   <File Type="BITSTR-LTX" Name="read_image_VHDL.ltx"/>
+  <File Type="RCFI_FILE" Name="read_image_VHDL.rcfi"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <File Type="OPT-DRC" Name="read_image_VHDL_drc_opted.rpt"/>
   <File Type="OPT-HWDEF" Name="read_image_VHDL.hwdef"/>
@@ -48,11 +51,8 @@
   <File Type="PHYSOPT-DCP" Name="read_image_VHDL_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="read_image_VHDL_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="read_image_VHDL_postroute_physopt_bb.dcp"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="read_image_VHDL_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-DRC-RPX" Name="read_image_VHDL_drc_routed.rpx"/>
   <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="read_image_VHDL_methodology_drc_routed.rpx"/>
   <File Type="PDI-FILE" Name="read_image_VHDL.pdi"/>
-  <File Type="RCFI_FILE" Name="read_image_VHDL.rcfi"/>
   <File Type="CFI_FILE" Name="read_image_VHDL.cfi"/>
   <File Type="RNPI_FILE" Name="read_image_VHDL.rnpi"/>
   <File Type="NPI_FILE" Name="read_image_VHDL.npi"/>
