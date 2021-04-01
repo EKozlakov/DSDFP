@@ -1,6 +1,6 @@
 # **Problems with pins in 'read_image_VHDL.vhd'**
 
-  When attempting to display what 'read\_image\_VHDL.vhd' reads in some of it's lines as a "proof of concept," we have encountered an error in which some of the ports declared in the entity were not mapped properly to a pin on the Nexys A7-100T board. We were unsure how to map these ports properly in order to achieve our intended function, and did not want to ignore the warnings shown by Vivado. As a way of solving this, we may now attempt to work on a VHDL file that reads an SD card in order to properly map the unused ports in 'read\_image\_VHDL.' 
+  When attempting to display what 'read\_image\_VHDL.vhd' reads in some of its lines as a "proof of concept," we have encountered an error in which some of the ports declared in the entity were not mapped properly to a pin on the Nexys A7-100T board. We were unsure how to map these ports properly in order to achieve our intended function, and did not want to ignore the warnings shown by Vivado. As a way of solving this, we may now attempt to work on a VHDL file that reads an SD card in order to properly map the unused ports in 'read\_image\_VHDL.' 
   
   The unmapped ports labelled in error, as well as their respective error messages, are shown below. Project files are availabe below:
   
