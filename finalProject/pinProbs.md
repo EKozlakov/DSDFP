@@ -7,7 +7,7 @@
   - [read_image_VHDL.vhd](https://github.com/EKozlakov/CPE487A-DSD/blob/master/finalProject/read_image_VHDL/read_image_VHDL.srcs/sources_1/new/read_image_VHDL.vhd) 
   - [counter.vhd](https://github.com/EKozlakov/CPE487A-DSD/blob/master/finalProject/read_image_VHDL/read_image_VHDL.srcs/sources_1/new/counter.vhd)
   - [leddec.vhd](https://github.com/EKozlakov/CPE487A-DSD/blob/master/finalProject/read_image_VHDL/read_image_VHDL.srcs/sources_1/new/leddec.vhd)
-  - [leddec.xdc (rednamed from 'hexcount.xdc'](https://github.com/EKozlakov/CPE487A-DSD/blob/master/finalProject/read_image_VHDL/read_image_VHDL.srcs/constrs_1/new/leddec.xdc)
+  - [leddec.xdc (rednamed from 'hexcount.xdc')](https://github.com/EKozlakov/CPE487A-DSD/blob/master/finalProject/read_image_VHDL/read_image_VHDL.srcs/constrs_1/new/leddec.xdc)
   
   Ports in error:
   
