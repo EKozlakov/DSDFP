@@ -19,7 +19,9 @@ entity read_image_VHDL is
     wraddress: IN STD_logic_vector((ADDR_WIDTH-1) downto 0);
     we: IN STD_LOGIC;
     re: IN STD_LOGIC;
-    q: OUT std_logic_vector ((DATA_WIDTH-1) DOWNTO 0));
+    q: OUT std_logic_vector ((DATA_WIDTH-1) DOWNTO 0);
+    seg: OUT std_logic_vector (6 DOWNTO 0);
+    anode: OUT std_logic_vector (7 DOWNTO 0));
 end read_image_VHDL;
 
 architecture behavioral of read_image_VHDL is
@@ -42,18 +44,52 @@ end function;
 
 signal ram_block: mem_type := init_mem(IMAGE_FILE_NAME);
 signal read_address_reg: std_logic_vector((ADDR_WIDTH-1) downto 0) := (others=>'0');
-  
+
+COMPONENT counter IS
+    PORT (
+            clk : in STD_LOGIC;
+            count : OUT STD_LOGIC_VECTOR (15 DOWNTO 0);
+            mpx : OUT STD_LOGIC_VECTOR (2 DOWNTO 0)
+          );
+END COMPONENT;
+
+
+COMPONENT leddec IS
+    PORT (
+        dig : IN STD_LOGIC_VECTOR (2 DOWNTO 0);
+        data : IN STD_LOGIC_VECTOR (3 DOWNTO 0); --data for display
+        anode : OUT STD_LOGIC_VECTOR (7 DOWNTO 0);
+        seg : OUT STD_LOGIC_VECTOR (6 DOWNTO 0)
+    );
+END COMPONENT;
+
+signal S : STD_LOGIC_VECTOR (15 DOWNTO 0); --connect C1 and L1 for values of 4 digits.
+signal md : STD_LOGIC_VECTOR (2 DOWNTO 0); --mpx selects displays
+signal display : STD_LOGIC_VECTOR (3 DOWNTO 0); --Send digit for only 1 display to leddec.
+signal front_half_data : STD_LOGIC_VECTOR (3 DOWNTO 0); --will carry first 4 bits of data to begin with. 
+
 begin
   process (clock)
   begin
    if (rising_edge(clock)) then
       if (we = '1') then
         ram_block(to_integer(unsigned(wraddress))) <= data;
+        front_half_data <= data((DATA_WIDTH-1) DOWNTO 4);
       end if;
       if (re = '1') then
         q <= ram_block(to_integer(unsigned(rdaddress)));
       end if;
     end if;
   end process;
+
+C1 : counter
+PORT MAP (clk => clock, count => S, mpx => md);
+L1 : leddec
+PORT MAP(dig => md, data => front_half_data, anode => anode, seg => seg);
+
+display <= S(3 DOWNTO 0) WHEN md = "000" ELSE
+           S(7 DOWNTO 4) WHEN md = "001" ELSE
+           S(11 DOWNTO 8) WHEN md = "010" ELSE
+           S(15 DOWNTO 12);
 
 end behavioral;

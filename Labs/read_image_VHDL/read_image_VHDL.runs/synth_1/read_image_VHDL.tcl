@@ -70,6 +70,8 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param chipscope.maxJobs 2
+set_msg_config -id {Common 17-41} -limit 10000000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a100tcsg324-1
 
@@ -86,6 +88,7 @@ set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_vhdl -library xil_defaultlib {
+  D:/CPE487A-DSD/Labs/read_image_VHDL/read_image_VHDL.srcs/sources_1/new/counter.vhd
   D:/CPE487A-DSD/Labs/read_image_VHDL/read_image_VHDL.srcs/sources_1/new/leddec.vhd
   D:/CPE487A-DSD/Labs/read_image_VHDL/read_image_VHDL.srcs/sources_1/new/read_image_VHDL.vhd
 }
