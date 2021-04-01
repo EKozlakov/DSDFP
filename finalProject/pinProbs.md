@@ -9,12 +9,12 @@
   -[leddec.xdc (rednamed from 'hexcount.xdc'](https://github.com/EKozlakov/CPE487A-DSD/blob/master/finalProject/read_image_VHDL/read_image_VHDL.srcs/constrs_1/new/leddec.xdc)
   
   Ports in error:
-    -data[7:0]
-    -q[7:0]
-    -raddress[3:0]
-    -waddress[3:0]
-    -re
-    -we
+    - data[7:0]
+    - q[7:0]
+    - raddress[3:0]
+    - waddress[3:0]
+    - re
+    - we
    
    Screenshot of Xilinx Vivado with error messages:
   ![alt text](https://github.com/EKozlakov/CPE487A-DSD/blob/master/finalProject/read_image_VHDL/pinPlanningErrors2.jpg)
