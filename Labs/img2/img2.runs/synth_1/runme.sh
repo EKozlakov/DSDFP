@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log read_image_VHDL.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source read_image_VHDL.tcl
+EAStep vivado -log img2.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source img2.tcl

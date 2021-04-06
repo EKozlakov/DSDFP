@@ -8,17 +8,17 @@ use std.textio.all;
 entity read_image_VHDL is
   generic (
     ADDR_WIDTH     : integer := 4;        
-    DATA_WIDTH     : integer := 8;
-    IMAGE_SIZE  : integer := 15;
+    DATA_WIDTH     : integer := 8; --change data width to 4 -- 4 data ports for micro SD connector
+    IMAGE_SIZE  : integer := 15; --might need to modify .mif file for more accurate 
     IMAGE_FILE_NAME : string := "D:\CPE487A-DSD\Labs\read_image_VHDL\testimg.mif"
   );
   port(
-    clock: IN STD_LOGIC;
-    data: IN std_logic_vector ((DATA_WIDTH-1) DOWNTO 0);
-    rdaddress: IN STD_logic_vector((ADDR_WIDTH-1) downto 0);
-    wraddress: IN STD_logic_vector((ADDR_WIDTH-1) downto 0);
-    we: IN STD_LOGIC;
-    re: IN STD_LOGIC;
+    clock: IN STD_LOGIC; --assigned in leddec.xdc, Pin E3
+    data: IN std_logic_vector ((DATA_WIDTH-1) DOWNTO 0); --assign SD data ports to this, requires change in data width
+    rdaddress: IN STD_logic_vector((ADDR_WIDTH-1) downto 0); --? Figure out down the line
+    wraddress: IN STD_logic_vector((ADDR_WIDTH-1) downto 0); --? Figure out down the line
+    we: IN STD_LOGIC; --write-enable signal : one bit (0 = "I don't wanna write", 1 = "I wanna write")
+    re: IN STD_LOGIC;   -- read-enable signal : one bit (0 = "I dont wanna read", 1 = "I wanna read")
     q: OUT std_logic_vector ((DATA_WIDTH-1) DOWNTO 0);
     seg: OUT std_logic_vector (6 DOWNTO 0);
     anode: OUT std_logic_vector (7 DOWNTO 0));

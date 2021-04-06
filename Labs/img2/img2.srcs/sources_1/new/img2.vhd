@@ -10,7 +10,7 @@ entity img2 is
     ADDR_WIDTH     : integer := 4;        
     DATA_WIDTH     : integer := 8;
     IMAGE_SIZE  : integer := 15;
-    IMAGE_FILE_NAME : string := "D:\CPE487A-DSD\finalProject\read_image_VHDL\testimg.mif"
+    IMAGE_FILE_NAME : string := "E:\testimg.mif"
   );
   port(
     clock: IN STD_LOGIC;
