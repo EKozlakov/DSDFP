@@ -1,7 +1,0 @@
-v 4
-file . "ha_tb.vhd" "97429e4cb374cf5478e0fac9c2acb0fb8626b06c" "20210206003155.130":
-  entity ha_tb at 1( 0) + 0 on 13;
-  architecture test of ha_tb at 7( 78) + 0 on 14;
-file . "ha.vhd" "6ebfafea5980479ac05ef50cfb1d773cc449f535" "20210206003144.846":
-  entity ha at 1( 0) + 0 on 11;
-  architecture behave of ha at 15( 278) + 0 on 12;
