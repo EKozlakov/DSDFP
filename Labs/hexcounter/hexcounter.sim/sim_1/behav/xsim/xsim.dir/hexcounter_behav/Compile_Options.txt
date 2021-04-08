@@ -1,1 +1,0 @@
--wto "e46787c418ee4b6b8646ed6a82d67129" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "hexcounter_behav" "xil_defaultlib.hexcounter" -log "elaborate.log" 
