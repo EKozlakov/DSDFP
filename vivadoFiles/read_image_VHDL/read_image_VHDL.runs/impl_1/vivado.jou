@@ -2,11 +2,11 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Thu Apr  1 12:47:24 2021
-# Process ID: 13668
-# Current directory: D:/CPE487A-DSD/Labs/read_image_VHDL/read_image_VHDL.runs/impl_1
+# Start of session at: Wed Apr 14 22:38:07 2021
+# Process ID: 18532
+# Current directory: D:/DSDFP/vivadoFiles/read_image_VHDL/read_image_VHDL.runs/impl_1
 # Command line: vivado.exe -log read_image_VHDL.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source read_image_VHDL.tcl -notrace
-# Log file: D:/CPE487A-DSD/Labs/read_image_VHDL/read_image_VHDL.runs/impl_1/read_image_VHDL.vdi
-# Journal file: D:/CPE487A-DSD/Labs/read_image_VHDL/read_image_VHDL.runs/impl_1\vivado.jou
+# Log file: D:/DSDFP/vivadoFiles/read_image_VHDL/read_image_VHDL.runs/impl_1/read_image_VHDL.vdi
+# Journal file: D:/DSDFP/vivadoFiles/read_image_VHDL/read_image_VHDL.runs/impl_1\vivado.jou
 #-----------------------------------------------------------
 source read_image_VHDL.tcl -notrace
