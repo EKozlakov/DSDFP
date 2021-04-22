@@ -39,8 +39,8 @@ and its parents werent there
 
 
 ### Resources
-`https://www.fpga4student.com/`
-`https://stackoverflow.com/`
-`https://embdev.net/topic/471055`
-`https://mh-nexus.de/en/hxd/`
+- [`https://www.fpga4student.com/`](https://www.fpga4student.com/)
+- [`https://stackoverflow.com/`](https://stackoverflow.com/)
+- [`https://embdev.net/topic/471055`](https://embdev.net/topic/471055)
+- [`https://mh-nexus.de/en/hxd/`](https://mh-nexus.de/en/hxd/)
 
