@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #-----------------------------------------------------------
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
@@ -10,3 +11,17 @@
 # Journal file: D:/CPE487A-DSD/Labs/read_image_VHDL/read_image_VHDL.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source read_image_VHDL.tcl -notrace
+=======
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Apr 14 22:33:42 2021
+# Process ID: 18504
+# Current directory: D:/DSDFP/vivadoFiles/read_image_VHDL/read_image_VHDL.runs/synth_1
+# Command line: vivado.exe -log read_image_VHDL.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source read_image_VHDL.tcl
+# Log file: D:/DSDFP/vivadoFiles/read_image_VHDL/read_image_VHDL.runs/synth_1/read_image_VHDL.vds
+# Journal file: D:/DSDFP/vivadoFiles/read_image_VHDL/read_image_VHDL.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source read_image_VHDL.tcl -notrace
+>>>>>>> a6f8635e26e1bca8fd0a69daf415ccee9e76cc3f

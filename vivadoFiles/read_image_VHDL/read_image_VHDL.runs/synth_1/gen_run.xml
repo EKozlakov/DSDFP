@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1617236149">
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1618454001">
   <File Type="PA-TCL" Name="read_image_VHDL.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="read_image_VHDL_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="read_image_VHDL_reports.tcl"/>
   <File Type="RDS-RDS" Name="read_image_VHDL.vds"/>
   <File Type="RDS-UTIL" Name="read_image_VHDL_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="read_image_VHDL_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="read_image_VHDL.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="read_image_VHDL_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="read_image_VHDL_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/counter.vhd">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../Labs/read_image_VHDL/read_image_VHDL.srcs/sources_1/new/counter.vhd"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../CPE487A-DSD/Labs/read_image_VHDL/read_image_VHDL.srcs/sources_1/new/counter.vhd"/>
         <Attr Name="ImportTime" Val="1617219748"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -18,7 +21,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/new/leddec.vhd">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../Labs/read_image_VHDL/read_image_VHDL.srcs/sources_1/new/leddec.vhd"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../CPE487A-DSD/Labs/read_image_VHDL/read_image_VHDL.srcs/sources_1/new/leddec.vhd"/>
         <Attr Name="ImportTime" Val="1617225096"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -26,7 +29,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/new/read_image_VHDL.vhd">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../Labs/read_image_VHDL/read_image_VHDL.srcs/sources_1/new/read_image_VHDL.vhd"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../CPE487A-DSD/Labs/read_image_VHDL/read_image_VHDL.srcs/sources_1/new/read_image_VHDL.vhd"/>
         <Attr Name="ImportTime" Val="1617225924"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -42,7 +45,7 @@
     <Filter Type="Constrs"/>
     <File Path="$PSRCDIR/constrs_1/new/leddec.xdc">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../Labs/read_image_VHDL/read_image_VHDL.srcs/constrs_1/new/leddec.xdc"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../CPE487A-DSD/Labs/read_image_VHDL/read_image_VHDL.srcs/constrs_1/new/leddec.xdc"/>
         <Attr Name="ImportTime" Val="1617235742"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -62,4 +65,5 @@
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
     <Step Id="synth_design"/>
   </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="blk_mem_gen_0"/>
 </GenRun>

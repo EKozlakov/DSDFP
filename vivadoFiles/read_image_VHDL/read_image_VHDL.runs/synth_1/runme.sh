@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='D:/CPE487A-DSD/Labs/read_image_VHDL/read_image_VHDL.runs/synth_1'
+HD_PWD='D:/DSDFP/vivadoFiles/read_image_VHDL/read_image_VHDL.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

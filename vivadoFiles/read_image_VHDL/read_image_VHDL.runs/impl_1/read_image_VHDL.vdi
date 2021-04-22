@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #-----------------------------------------------------------
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
@@ -589,3 +590,77 @@ write_bitstream: Time (s): cpu = 00:00:17 ; elapsed = 00:00:14 . Memory (MB): pe
 ERROR: [Common 17-39] 'write_bitstream' failed due to earlier errors.
 
 INFO: [Common 17-206] Exiting Vivado at Thu Apr  1 12:49:23 2021...
+=======
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Apr 14 22:38:07 2021
+# Process ID: 18532
+# Current directory: D:/DSDFP/vivadoFiles/read_image_VHDL/read_image_VHDL.runs/impl_1
+# Command line: vivado.exe -log read_image_VHDL.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source read_image_VHDL.tcl -notrace
+# Log file: D:/DSDFP/vivadoFiles/read_image_VHDL/read_image_VHDL.runs/impl_1/read_image_VHDL.vdi
+# Journal file: D:/DSDFP/vivadoFiles/read_image_VHDL/read_image_VHDL.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source read_image_VHDL.tcl -notrace
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1015.637 ; gain = 0.000
+Command: link_design -top read_image_VHDL -part xc7a100tcsg324-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-454] Reading design checkpoint 'd:/DSDFP/vivadoFiles/read_image_VHDL/read_image_VHDL.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.dcp' for cell 'B1'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1015.637 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [D:/DSDFP/vivadoFiles/read_image_VHDL/read_image_VHDL.srcs/constrs_1/new/leddec.xdc]
+WARNING: [Vivado 12-584] No ports matched 'SD_DAT[0]'. [D:/DSDFP/vivadoFiles/read_image_VHDL/read_image_VHDL.srcs/constrs_1/new/leddec.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/DSDFP/vivadoFiles/read_image_VHDL/read_image_VHDL.srcs/constrs_1/new/leddec.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SD_DAT[1]'. [D:/DSDFP/vivadoFiles/read_image_VHDL/read_image_VHDL.srcs/constrs_1/new/leddec.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/DSDFP/vivadoFiles/read_image_VHDL/read_image_VHDL.srcs/constrs_1/new/leddec.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SD_DAT[2]'. [D:/DSDFP/vivadoFiles/read_image_VHDL/read_image_VHDL.srcs/constrs_1/new/leddec.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/DSDFP/vivadoFiles/read_image_VHDL/read_image_VHDL.srcs/constrs_1/new/leddec.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SD_DAT[3]'. [D:/DSDFP/vivadoFiles/read_image_VHDL/read_image_VHDL.srcs/constrs_1/new/leddec.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/DSDFP/vivadoFiles/read_image_VHDL/read_image_VHDL.srcs/constrs_1/new/leddec.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [D:/DSDFP/vivadoFiles/read_image_VHDL/read_image_VHDL.srcs/constrs_1/new/leddec.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1015.637 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 2 instances
+
+8 Infos, 4 Warnings, 4 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:38 . Memory (MB): peak = 1015.637 ; gain = 0.000
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net B1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/doutb[0] has multiple drivers: B1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM18.ram/DOBDO[0], and q_reg[0]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net B1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/doutb[1] has multiple drivers: B1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM18.ram/DOBDO[1], and q_reg[1]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net B1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/doutb[2] has multiple drivers: B1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM18.ram/DOBDO[2], and q_reg[2]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net B1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/doutb[3] has multiple drivers: B1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM18.ram/DOBDO[3], and q_reg[3]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net B1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/doutb[4] has multiple drivers: B1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM18.ram/DOBDO[4], and q_reg[4]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net B1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/doutb[5] has multiple drivers: B1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM18.ram/DOBDO[5], and q_reg[5]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net B1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/doutb[6] has multiple drivers: B1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM18.ram/DOBDO[6], and q_reg[6]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net B1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/doutb[7] has multiple drivers: B1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM18.ram/DOBDO[7], and q_reg[7]/Q.
+INFO: [Project 1-461] DRC finished with 8 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+ERROR: [Vivado_Tcl 4-78] Error(s) found during DRC. Opt_design not run.
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 1015.637 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+13 Infos, 4 Warnings, 4 Critical Warnings and 9 Errors encountered.
+opt_design failed
+ERROR: [Common 17-39] 'opt_design' failed due to earlier errors.
+
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 14 22:39:17 2021...
+>>>>>>> a6f8635e26e1bca8fd0a69daf415ccee9e76cc3f
