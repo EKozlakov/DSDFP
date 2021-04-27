@@ -24,13 +24,13 @@ We did a lot of research and experimentation on whether to store the image files
   - Storing files on an SD card proved to be a far more complicated task. The FPGA doesn't have support for a file system, so the information would have to be written to the Logical Disk of an SD card. We accomplished this using [HxD made by Mael Horz](https://mh-nexus.de/en/hxd/). A tutorial for how to do some basic writing raw hex to an SD Card is shown [here](***TODO** write da tutorial*). 
   - The data could theoretically be read directly with the memory address on the SD card. 
   - Unfortunately, the pin assignment for the SD card is extremely complex, and required a proprietary library that was not available with our license: [`logiSDHC SD Card Host Controller` by Xylon d.o.o.](https://www.xilinx.com/products/intellectual-property/1-1p025g.html) and [`SD Card / eMMC Host IP Core` by Arasan Chip Systems, INC.](https://www.xilinx.com/products/intellectual-property/1-ii2qo3.html). 
-  - Additionally, we referenced the SD Association's Simplified Specifications for the Physical Layer of their SD Cards. All of the SD Association's simplified specifications are available in the "Simplified Specifications" under the "downloads" section of their website, [here](https://www.sdcard.org/downloads/pls/). 
+  - Additionally, we referenced the SD Association's Simplified Specifications for the Physical Layer of their SD Cards. All of the SD Association's simplified specifications are available in the "Simplified Specifications" under the "downloads" section of their website, [here](https://www.sdcard.org/downloads/pls/). An image of a Standard SD card's pins/contact pads is shown below. Image is courtesy of Cactus Labs.
 
-***TODO** maybe attach image of sd card pinouts*
+![Image not found](sdpinouts.jpg "Pinouts of a Standard SD Card. The pins are the exact same on the microSD version")
 
 #### **Writing to the Block RAM**
 Writing to the Block RAM (BRAM) in our project was a difficult challenge that we only began to make progress on near the end of the semester. We began our highly-experimental BRAM implementation using the on-board Block Memory Generator available in the Vivado IP Catalog, creating Simple Dual Port (SDP) RAM blocks. A diagram explaining how the SDP BRAM pins are laid out is shown below. The guide we followed to achieve this is the [Vivado Block Memory Generator v8.4 Logicore IP Product Guide](https://www.xilinx.com/support/documentation/ip_documentation/blk_mem_gen/v8_4/pg058-blk-mem-gen.pdf), available at the link. 
-  ![Image not found](sdpram.jpg "Simple Dual-Port RAM diagram courtesy of Vivado Block Memory Generator v8.4 LogiCORE IP Product Guide")
+  ![Image not found](sdpram.jpg "Simple Dual-Port RAM diagram, courtesy of Vivado Block Memory Generator v8.4 LogiCORE IP Product Guide")
   
 ### **Problems Encountered**
 <!--It all started when VHDL was born
