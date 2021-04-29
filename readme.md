@@ -32,10 +32,10 @@ We did a lot of research and experimentation on whether to store the image files
   - Unfortunately, the pin assignment for the SD card is extremely complex, and required a proprietary library that was not available with our license: [logiSDHC SD Card Host Controller by Xylon d.o.o.](https://www.xilinx.com/products/intellectual-property/1-1p025g.html).
   - Additionally, we referenced the SD Association's Simplified Specifications for the Physical Layer of their SD Cards. All of the SD Association's simplified specifications are available in the "Simplified Specifications" under the "downloads" section of their website, [here](https://www.sdcard.org/downloads/pls/). An image of a Standard SD card's pins/contact pads is shown below. Image is courtesy of Cactus Labs.
 
-  ![Image not found](sdpinouts.jpg)  
-  *Pinouts of a Standard SD Card. The pins are the exact same on the microSD version.*  
-  ![Image not found](sdhostlicense.jpg)  
-  *The 'SD Card Host Controller' IP Core was unavailable to us with our current license, making it difficult to implement a pre-defined, well-constructed controller.*  
+![Image not found](sdpinouts.jpg)  
+*Pinouts of a Standard SD Card. The pins are the exact same on the microSD version.*  
+![Image not found](sdhostlicense.jpg)  
+*The 'SD Card Host Controller' IP Core was unavailable to us with our current license, making it difficult to implement a pre-defined, well-constructed controller.*  
 
 #### **Writing to the Block RAM**
 
