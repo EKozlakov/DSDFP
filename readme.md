@@ -83,8 +83,13 @@ and its parents didn't even show up-->
 <!-- i will make this an ordered/numbered list-->
 
 1. Generate memory initialization files to load onto FPGA board.  
-  1.1. One method of achieving this task is "Inferring Memory" in your source code. We did not expriment with this method of memory loading as we pursued method 1.2.
-  1.2  There is "Core Generator" IP available through Vivado that allows for more control over how your memory initialization is loaded into your board's BRAM. <!--i will check license availability-->
+  1.1. One method of achieving this task is "Inferring Memory" in your source code. We did not expriment with this method of memory loading as we pursued method 1.2. However, if implemented correctly, you can sidestep having to use Block RAM generator found in Vivado's Xilinx IP Catalog. There is Core Generator/Block Memory Generator IP available through Vivado that allows for more control over how your memory initialization is loaded into your board's BRAM.  <!--i will check license availability-->
+  1.2 We highly advise to do a lot of your own research on memory inference in particular. Below are a just a few starters on memory inference and several starting examples:
+    - ['What does memory inference mean?'](https://www.edaboard.com/threads/what-does-memory-inference-mean.123138/)
+    - ['Stackoverflow Example Code on how to infer ram in VHDL'](https://stackoverflow.com/questions/57435602/vhdl-correctly-way-to-infer-a-single-port-ram-with-synchronous-read)  
+  1.3 Accomplishing this is already a massive step in the right direction, as it is a difficult task all on its own. After completing this, with a proof of functionality, you could call this your whole project.
+2. Read from initialized memory
+   2.1 Reading from initialized memory in one way or another -- outputting to LED-decoders, VGA port, or otherwise -- would be the next step in producing an Image-Processing board. Without the ability to retrieve the data you put in, your board becomes the equivalent of a digital trash can, if you could write a bitstream. It is this part of the project that we have not reached and would have been the next major milestone.
 
 
 ### Resources
