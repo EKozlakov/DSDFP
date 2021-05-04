@@ -13,6 +13,12 @@ Team Members:
 The goal of our project was to write a VHDL program to our board that would perform basic image processing. This amounted to: 1) reading an image file in binary form written to the logical disk of an SD card; 2) saving what was read to memory on-board the Nexys A7-100T; and 3) outputting what was in memory onto a screen via a VGA cable. We decided that any further changes and processing to our image would be a post-end goal.+
 We used valued resources, such as [`GitHub`](https://github.com/EKozlakov/DSDFP) and [`Google Sites`](https://sites.google.com/view/dsdfpgroup10/), to document code and weekly logs of the project.
 
+## **Current State of our code**
+
+Our current code is capable of locating an example binary file on our computer running Vivado, read through the file, and import its contents into the block RAM of the simulator. This process is detailed below, and this is what the simulator's block RAM looks like: 
+<!--TODO add screenshots of simulator block RAM -->
+
+## **Documentation of Progress and Research**
 ### **Reading Files**
 
 Our first challenge for this project was deciding how to read in the image file so that we could perform our analysis and processing on it. We discovered that, using VHDL, and image *cannot* be read in compressed image filetypes like .png or .jpg. It is only possible to load an image onto an FPGA by converting it into raw binary or hex code, writing it to a .mif (Memory Initialization File). Thus we have decided to focus on reading in image files that have been converted to raw binary/hex.
@@ -47,7 +53,7 @@ Writing to the Block RAM (BRAM) in our project was a difficult challenge that we
 ### **Problems Encountered**
 
 <!--It all started when VHDL was born
-and its parents didn't even show up -->
+and its parents didn't even show up-->
 
 **Development Problems**
 
@@ -69,6 +75,14 @@ and its parents didn't even show up -->
   - Given our underestimation of the difficulty of our goal, we jumped into the project blindly. As mentioned before, we didn't work out exact plans as to what should be accomplished each week. We also did not organize how our project should be structured in terms of coding and the different layers of VHDL projects.
   - As a result, we had misconstrued ideas about the difficulties of different aspects of the project. This resulted in setbacks which led us to an incomplete project.
 <!-- add more  -->
+
+## Potential Outline for Future Groups
+<!-- i will make this an ordered/numbered list-->
+
+1. Generate memory initialization files to load onto FPGA board.  
+  1.1. One method of achieving this task is "Inferring Memory" in your source code. We did not expriment with this method of memory loading as we pursued method 1.2.
+  1.2  There is "Core Generator" IP available through Vivado that allows for more control over how your memory initialization is loaded into your board's BRAM. <!--i will check license availability-->
+
 
 ### Resources
 
