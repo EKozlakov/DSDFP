@@ -16,6 +16,9 @@ We used valued resources, such as [`GitHub`](https://github.com/EKozlakov/DSDFP)
 ## **Current State of our code**
 
 Our current code is capable of locating an example binary file on our computer running Vivado, read through the file, and import its contents into the block RAM of the simulator. This process is detailed below, and this is what the simulator's block RAM looks like: 
+
+![Image not found](waveform.jpg)
+
 <!--TODO add screenshots of simulator block RAM -->
 
 ## **Documentation of Progress and Research**
