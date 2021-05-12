@@ -1,0 +1,1 @@
+The source (read_image_vhdl.vhd) and testbench (tb_read_image_vhdl.vhd) files in this folder work properly in a Behavioral Simulation to demonstrate how VHDL infers and writes to Block RAM.

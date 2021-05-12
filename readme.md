@@ -17,9 +17,8 @@ We used valued resources, such as [`GitHub`](https://github.com/EKozlakov/DSDFP)
 
 Our current code is capable of locating an example binary file on our computer running Vivado, read through the file, and import its contents into the block RAM of the simulator. This process is detailed below, and this is what the simulator's block RAM looks like: 
 
-![Image not found](waveform.jpg)
+![Image not found](waveform.jpg)  
 
-<!--TODO add screenshots of simulator block RAM -->
 
 ## **Documentation of Progress and Research**
 ### **Reading Files**
@@ -77,19 +76,24 @@ and its parents didn't even show up-->
 - No "Plan of Attack"
   - Given our underestimation of the difficulty of our goal, we jumped into the project blindly. As mentioned before, we didn't work out exact plans as to what should be accomplished each week. We also did not organize how our project should be structured in terms of coding and the different layers of VHDL projects.
   - As a result, we had misconstrued ideas about the difficulties of different aspects of the project. This resulted in setbacks which led us to an incomplete project.
-<!-- add more  -->
+- Lack of understanding
+  - Due to our lack of a deeper understanding of VHDL, this resulted in us choosing a project for which we didn't understand the scope, as mentioned above.
+  - Although this issue is clear as day, it is important to note how complex some functions and behaviors get in VHDL, even for goals that seem simple to achieve. Had we had a deeper understanding of VHDL
 
 ## Potential Outline for Future Groups
 <!-- i will make this an ordered/numbered list-->
+- Note: Please use this list as a springboard on getting started. There are several ways to complete this task, and the ideas listed below are meant to push the reader(s) in the right direction.
 
 1. Generate memory initialization files to load onto FPGA board.  
   1.1. One method of achieving this task is "Inferring Memory" in your source code. We did not expriment with this method of memory loading as we pursued method 1.2. However, if implemented correctly, you can sidestep having to use Block RAM generator found in Vivado's Xilinx IP Catalog. There is Core Generator/Block Memory Generator IP available through Vivado that allows for more control over how your memory initialization is loaded into your board's BRAM.  <!--i will check license availability-->
-  1.2 We highly advise to do a lot of your own research on memory inference in particular. Below are a just a few starters on memory inference and several starting examples:
+   1.2 We highly advise to do a lot of your own research on memory inference in particular. Below are a just a few starters on memory inference and several starting examples:
     - ['What does memory inference mean?'](https://www.edaboard.com/threads/what-does-memory-inference-mean.123138/)
     - ['Stackoverflow Example Code on how to infer ram in VHDL'](https://stackoverflow.com/questions/57435602/vhdl-correctly-way-to-infer-a-single-port-ram-with-synchronous-read)  
-  1.3 Accomplishing this is already a massive step in the right direction, as it is a difficult task all on its own. After completing this, with a proof of functionality, you could call this your whole project.
-2. Read from initialized memory
-   2.1 Reading from initialized memory in one way or another -- outputting to LED-decoders, VGA port, or otherwise -- would be the next step in producing an Image-Processing board. Without the ability to retrieve the data you put in, your board becomes the equivalent of a digital trash can, if you could write a bitstream. It is this part of the project that we have not reached and would have been the next major milestone.
+   1.3. Accomplishing this is already a massive step in the right direction, as it is a difficult task all on its own. After completing this, with a proof of functionality, you could call this your whole project.
+2. Prove that memory has been initialized
+   2.1. Proving that something has been actually pushed to your board would be the next step in the project. This can likely be done through simulations, or outputting certain symbols to the LED decoders as a "proof-of-concept."
+3. Fully output an image through VGA cable to a monitor   
+   3.1. After proving that your board has been initialized with some starting memory, outputting whatever has been written to memory would be the next big step. This would require reading from the inferred BRAMs, and sending these results through a VGA cable. We advise sticking to monochrome/black and white images to avoid having to deal with the 3 RGB channels and their different value. However, given we haven't reached this point in our own project, it would be best to reference the ['VGA Ball'](https://github.com/kevinwlu/dsd/tree/master/Nexys-A7/Lab-3) lab provided in this class when trying to figure out how to approach this problem.
 
 
 ### Resources
